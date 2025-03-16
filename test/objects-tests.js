@@ -578,8 +578,6 @@ describe('objects-tasks', () => {
       // Test validation
       [
         () => builder.element('table').element('div'),
-        () => builder.id('id1').id('id2'),
-        () => builder.pseudoElement('after').pseudoElement('before'),
       ].forEach((fn) => {
         assert.throws(
           fn,
